@@ -41,7 +41,7 @@ function button() {
   const myInput = document.getElementById("search");
   const currentValue = myInput.value;
   const result = globalPeople.find((el) => {
-    return el.country === currentValue;
+    return el.country == currentValue;
   });
   console.log(result);
 }

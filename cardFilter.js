@@ -14,12 +14,7 @@ myLoading = true;
 myApi
   .then((data) => data.json())
   .then(({ response }) => {
-    const cases = response[
-        for (let i = 0; i < response.length; i++) {
-            const element = array[i];
-            
-        }
-    ].country;
-    console.log(cases)
+    const cases = response[0].country;
+    console.log(cases);
   })
   .catch((err) => console.error(err));

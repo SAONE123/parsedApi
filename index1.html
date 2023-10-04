@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="display-data">
+      <div class="grid-container">
+        <div class="item1" style="background-color: #ffa401">
+          <p style="font-size: 30px">COVID-19 TRACKER</p>
+          <input
+            type="search"
+            name="searchbox"
+            id="search"
+            placeholder="input Country"
+          />
+          <button id="submit_btn" onclick="button()">SUBMIT</button>
+        </div>
+        <div class="item2">
+          <i class="fa fa-line-chart" style="font-size: 36px"></i>
+          <p>Active Cases</p>
+          <p id="active">0</p>
+        </div>
+        <div class="item3" id="new()">
+          <i class="material-icons" style="font-size: 36px">add_alert</i>
+          <p>New Cases</p>
+          <p id="new">0</p>
+        </div>
+        <div class="item4" id="recovered()">
+          <i class="material-icons" style="font-size: 36px">directions_run</i>
+          <p>Recovered Cases</p>
+          <p id="recovered">0</p>
+        </div>
+        <div class="item5" id="cases()">
+          <i class="material-icons" style="font-size: 36px">filter_9_plus</i>
+          <p>Total Cases</p>
+          <p id="cases">0</p>
+        </div>
+        <div class="item6" id="deaths()">
+          <i class="material-icons" style="font-size: 36px; color: red"
+            >blur_off</i
+          >
+          <p>Total Deaths</p>
+          <p id="deaths">0</p>
+        </div>
+        <div class="item7" id="tests()">
+          <i class="material-icons" style="font-size: 36px"
+            >assignment_turned_in</i
+          >
+          <p>Total Tests</p>
+          <p id="tests">0</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

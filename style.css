@@ -43,3 +43,7 @@
 #submit_btn:active {
     background-color: rgb(27, 27, 27);
 }
+
+input[type=search] {
+    text-transform: capitalize;
+}

@@ -42,23 +42,19 @@ function button() {
   const result = globalPeople.find((el) => {
     return el.country == currentValue;
   });
-  const active = document.getElementById("active");
-  const cases = document.getElementById("cases");
-  const deaths = document.getElementById("deaths");
-  const New = document.getElementById("new");
-  const recovered = document.getElementById("recovered");
-  const tests = document.getElementById("tests");
-  console.log(active, cases, deaths, New, recovered, tests);
-
   const HasilAkhir = [
-    (active.innerText = result.active),
-    (cases.innerText = result.cases),
-    (deaths.innerText = result.deaths),
-    (New.innerText = result.new),
-    (recovered.innerText = result.recovered),
-    (tests.innerText = result.tests),
+    (document.getElementById("active").innerText = result.active),
+    (document.getElementById("cases").innerText = result.cases),
+    (document.getElementById("deaths").innerText = result.deaths),
+    (document.getElementById("new").innerText = result.new),
+    (document.getElementById("recovered").innerText = result.recovered),
+    (document.getElementById("tests").innerText = result.tests),
   ];
   return HasilAkhir;
 }
 
 window.open(alert("diharapkan menggunakan huruf awal besar"));
+function init() {
+  document.getElementById("search").value = "";
+}
+window.onload = init;
